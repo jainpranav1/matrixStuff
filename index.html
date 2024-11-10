@@ -48,20 +48,20 @@
         /* transform: matrix(1, 0, 0, 2, 0, 0); */
 
         /*
-          shear horizontally with a shear factor of 1
-          | 1 1 |
-          | 0 1 |
+          shear horizontally with a shear factor of 0.5
+          | 1 0.5 |
+          | 0 1   |
           
         */
-        /* transform: matrix(1, 0, 1, 1, 0, 0); */
+        /* transform: matrix(1, 0, 0.5, 1, 0, 0); */
 
         /*
-          shear vertically with a shear factor of 1
-          | 1 0 |
-          | 1 1 |
+          shear vertically with a shear factor of 0.5
+          | 1   0 |
+          | 0.5 1 |
           
         */
-        /* transform: matrix(1, 1, 0, 1, 0, 0); */
+        /* transform: matrix(1, 0.5, 0, 1, 0, 0); */
 
         /*
           rotate by 90 degree (pi/2 radians)
@@ -78,6 +78,16 @@
           0
         );
         */
+
+        /*
+          multiple transformations
+          
+          first, scale vertically by 2
+          second, scale horizontally by 1.5
+          | 1.5 0 |  | 1 0 |
+          | 0   1 |  | 0 2 |
+        */
+        /* transform: matrix(1.5, 0, 0, 1, 0, 0) matrix(1, 0, 0, 2, 0, 0); */
 
         /*
           determinant of 0
