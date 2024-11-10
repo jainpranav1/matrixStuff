@@ -14,10 +14,13 @@
           transform: matrix(a, b, c, d, 0, 0)
       */
 
-      #scaryPic {
-        width: 300px;
-        margin-left: 200px;
-        margin-top: 100px;
+      .scaryPic {
+        width: 200px;
+        margin-left: 125px;
+        margin-top: 200px;
+      }
+
+      #transformPic {
         transform-origin: center;
         transform: matrix(1, 0, 0, 1, 0, 0);
       }
@@ -25,7 +28,12 @@
   </head>
   <body>
     <img
-      id="scaryPic"
+      class="scaryPic"
+      src="https://upload.wikimedia.org/wikipedia/commons/3/32/Portrait_of_Shel_Silverstein_in_c._1964_by_Jerry_Yulsman.jpg"
+    />
+    <img
+      class="scaryPic"
+      id="transformPic"
       src="https://upload.wikimedia.org/wikipedia/commons/3/32/Portrait_of_Shel_Silverstein_in_c._1964_by_Jerry_Yulsman.jpg"
     />
   </body>
