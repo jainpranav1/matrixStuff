@@ -22,7 +22,38 @@
 
       #transformPic {
         transform-origin: center;
-        transform: matrix(1, 0, 0, 1, 0, 0);
+
+        /*
+          scale horizontally by 2
+          | 2 0 |
+          | 0 1 |
+          
+        */
+        /* transform: matrix(2, 0, 0, 1, 0, 0); */
+
+        /*
+          scale vertically by 2
+          | 1 0 |
+          | 0 2 |
+          
+        */
+        /* transform: matrix(1, 0, 0, 2, 0, 0); */
+
+        /*
+          rotate by 90 degree (pi/2 radians)
+          | cos(pi/2) -sin(pi/2) |
+          | sin(pi/2)  cos(pi/2) |
+        */
+        /*
+        transform: matrix(
+          calc(cos(pi/2)),
+          calc(sin(pi/2)),
+          calc(sin(pi/2) * -1),
+          calc(cos(pi/2)),
+          0,
+          0
+        );
+        */
       }
     </style>
   </head>
