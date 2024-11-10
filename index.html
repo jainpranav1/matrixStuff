@@ -24,6 +24,14 @@
         transform-origin: center;
 
         /*
+          do nothing
+          | 1 0 |
+          | 0 1 |
+          
+        */
+        /* transform: matrix(1, 0, 0, 1, 0, 0); */
+
+        /*
           scale horizontally by 2
           | 2 0 |
           | 0 1 |
@@ -38,6 +46,22 @@
           
         */
         /* transform: matrix(1, 0, 0, 2, 0, 0); */
+
+        /*
+          shear horizontally with a shear factor of 1
+          | 1 1 |
+          | 0 1 |
+          
+        */
+        /* transform: matrix(1, 0, 1, 1, 0, 0); */
+
+        /*
+          shear vertically with a shear factor of 1
+          | 1 0 |
+          | 1 1 |
+          
+        */
+        /* transform: matrix(1, 1, 0, 1, 0, 0); */
 
         /*
           rotate by 90 degree (pi/2 radians)
