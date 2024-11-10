@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        To apply the following matrix:
+          | a c |
+          | b d |
+        
+        type the following:
+          transform: matrix(a, b, c, d, 0, 0)
+      */
+
+      #scaryPic {
+        width: 300px;
+        margin-left: 200px;
+        margin-top: 100px;
+        transform-origin: center;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="scaryPic"
+      src="https://upload.wikimedia.org/wikipedia/commons/3/32/Portrait_of_Shel_Silverstein_in_c._1964_by_Jerry_Yulsman.jpg"
+    />
+  </body>
+</html>
